@@ -23,7 +23,7 @@ app.get('/Users',async(req,res) =>
 
 app.get('/Users/:user', async (req, res) => {
   const user = req.params.user; 
-  console.log(user)
+  
   const oneUser = await prisma.users.findUnique({where: {user: user}});
   res.json(oneUser);
 });
@@ -68,7 +68,7 @@ app.get('/Animal',async(req,res) =>
     res.json(allUseres);
   })
 
-  app.get('/Animal/:name', async (req, res) => {
+app.get('/Animal/:name', async (req, res) => {
     const animalName = req.params.name; 
     const getAnimalByName = await prisma.animals.findUnique({where: {name: animalName}});
     res.json(getAnimalByName);
@@ -86,3 +86,17 @@ app.post('/Animal', async (req, res) => {
     await prisma.animals.create({data: newSepecie});
     return res.json({message});
   }); 
+
+app.put('/Animal/:name', async (req, res) => {
+	const nameToUpdate = req.params.user;
+
+	await prisma.animals.update({
+		where: {
+			name: nameToUpdate
+		},
+		data: {
+			id_animal_dangerlevel:req.body.id_animal_dangerlevel
+		}
+	})
+	return res.json({message: "Especie actualizado correctamente"});
+});

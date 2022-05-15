@@ -44,7 +44,6 @@ model Animals{
   animalRegion region_animal[] @relation("RA")
 }
 
-
 model region_animal{
   id_level_count Int @id @default(autoincrement())
   id_region_1  Region1 @relation(fields: [id_region_animals], references: [id])
