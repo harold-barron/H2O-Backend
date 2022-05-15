@@ -40,3 +40,19 @@ app.post('/Users', async (req, res) => {
   await prisma.users.create({data: newUser});
   return res.json({message});
 });
+
+app.put('/Users/:user', async (req, res) => {
+	const userToUpdate = req.params.user;
+
+	await prisma.users.update({
+		where: {
+			user: userToUpdate
+		},
+		data: {
+			regid:req.body.regid,
+      zoneLeader: req.body.zoneLeader
+		}
+	})
+
+	return res.json({message: "Usuario actualizado correctamente"});
+});
