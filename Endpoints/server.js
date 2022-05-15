@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3000;
-require('dotenv').config()
-
+import dotenv from 'dotenv'
+dotenv.config()
 // Require para usar Prisma
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
