@@ -9,6 +9,7 @@
   },
   "scripts": {
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "start": "node ./Endpoints/server.js"
   }
 }
