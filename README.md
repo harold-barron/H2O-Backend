@@ -47,12 +47,17 @@ Texto del quinto apartado
 ## Tema6
 Texto del sexto apartado
 
+## Dependencias de desarrollo 🛠️
+| |Dependencia|
+|------|------|
+|1|* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado|
+|2|* [Maven](https://maven.apache.org/) - Manejador de dependencias|
+|3|* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS|
+
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Gerardo Sanchez Alba** - *Frontend* - [villanuevand](https://github.com/villanuevand)
-* **Harold Alejandro Barron Perez** - *Backend* - [fulanitodetal](#fulanito-de-tal)
-* **Eugenio Torres** - *Direccion Creativa* - [villanuevand](https://github.com/villanuevand)
-* **Ernesto Botello Barron** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **Gerardo Sanchez Alba** - *Frontend* - [Gera097](https://github.com/Gera097)
+* **Harold Alejandro Barron Perez** - *Backend* - [harold-barron](https://github.com/harold-barron)
+* **Eugenio Torres García Luna** - *Direccion Creativa* - [Eugenio-tgl](https://github.com/Eugenio-tgl)
+* **Ernesto Botello Barron** - *Documentación* - [ErnestoBotello](https://github.com/ErnestoBotello)
 
