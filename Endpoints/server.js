@@ -95,11 +95,15 @@ app.put('/Animal/:name', async (req, res) => {
 			name: nameToUpdate
 		},
 		data: {
-			id_animal_dangerlevel:req.body.id_animal_dangerlevel
+			
+      link_image: req.body.link_image     
 		}
 	})
 	return res.json({message: "Especie actualizado correctamente"});
 });
+
+
+
 app.delete('/Animal/:name', async (req, res) => {
 	const animalToDelete = req.params.name;
 	await prisma.animals.delete({where: {name: animalToDelete}});
