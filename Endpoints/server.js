@@ -67,3 +67,10 @@ app.get('/Animal',async(req,res) =>
     const allUseres = await prisma.animals.findMany({});
     res.json(allUseres);
   })
+
+  app.get('/Animal/:name', async (req, res) => {
+    const animalName = req.params.name; 
+    const getAnimalByName = await prisma.animals.findUnique({where: {name: animalName}});
+    res.json(getAnimalByName);
+  });
+  
