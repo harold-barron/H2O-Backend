@@ -1,10 +1,13 @@
 # H2O-Backend
-Backend solution to Hack the Ocean 🌊 by Launchx
+Creación de la solución  Backend para el hackaton Hack the Ocean 🌊 de Launchx
 
 ![gifH20](https://user-images.githubusercontent.com/89043553/168487473-afdc8688-3bb7-4115-83db-2e222a2474e4.gif)
 
 ## Introducción
-Aqui va la introduccion
+
+### Reto:
+
+Elaborar un proyecto web (fullstack) que de solución escalable y ágil a una problemática relacionada con los océanos, utilizando, las tecnologías, marcos de trabajo y metodologías revisadas en Launch X.
 
 ## Tabla de contenidos: 📋
 ---
