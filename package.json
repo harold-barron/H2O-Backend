@@ -5,7 +5,8 @@
     "prisma": "^3.14.0"
   },
   "dependencies": {
-    "@prisma/client": "^3.14.0"
+    "@prisma/client": "^3.14.0",
+    "dotenv": "^16.0.1"
   },
   "scripts": {
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
