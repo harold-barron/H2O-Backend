@@ -6,46 +6,18 @@ Backend solution to Hack the Ocean 🌊 by Launchx
 ## Introducción
 Aqui va la introduccion
 
-## Indice
-
-| | TEMA |
-|------|------|
-|1|[Tema1](#id1)|
-|2|[Tema2](#id2)|
-|3|[Tema3](#id3)|
-|4|[Tema4](#id4)|
-|5|[Tema5](#id5)|
-|6|[Tema6](#id6)|
+## Tabla de contenidos: 📋
+---
+- [Tema1](#id1)
+- [Dependencias de desarrollo](#id2)
+- [Autores](#id3)
 
 <div id='id1' />
 
 ## Tema1
-Texto del primer apartado
+Aqui va el texto del Tema1
 
 <div id='id2' />
-
-## Tema2
-Texto del segundo apartado
-
-<div id='id3' />
-
-## Tema3
-Texto del tercer apartado
-
-<div id='id4' />
-
-## Tema4
-Texto del cuarto apartado
-
-<div id='id5' />
-
-## Tema5
-Texto del quinto apartado
-
-<div id='id6' />
-
-## Tema6
-Texto del sexto apartado
 
 ## Dependencias de desarrollo 🛠️
 | |Dependencia|
@@ -53,6 +25,8 @@ Texto del sexto apartado
 |1|* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado|
 |2|* [Maven](https://maven.apache.org/) - Manejador de dependencias|
 |3|* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS|
+
+<div id='id3' />
 
 ## Autores ✒️
 
