@@ -3,70 +3,49 @@ const prisma = new PrismaClient();
 
 (async function main() {
   try {
-    const bajaCalifornia = await prisma.region1.upsert({
-      where: { id:1 },
+    const California = await prisma.region1.upsert({
+      where: { id:10 },
       update: {},
       create: {
-        name:"Baja california"
+        name:"Golfo de California"
     },
     });
-    const noroeste = await prisma.region1.upsert({
-        where: { id:2 },
+    const golfoMexico = await prisma.region1.upsert({
+        where: { id:11},
         update: {},
         create: {
-          name:"Noroeste"
+          name:"Golfo de México"
       },
       });
-    const costaCentralPasifico = await prisma.region1.upsert({
-        where: { id:3 },
+    const costaPasifico = await prisma.region1.upsert({
+        where: { id:12 },
         update: {},
         create: {
-          name:"Costa central del Pasífico"
+          name:"Costa del Pacífico Norte"
       },
       });
-    const Oaxaca = await prisma.region1.upsert({
-        where: { id:4 },
+    const costaMexicana = await prisma.region1.upsert({
+        where: { id:13 },
         update: {},
         create: {
-          name:"Oaxaca"
+          name:"Costas mexicanas"
       },
       });
-    const tabascoChiapas = await prisma.region1.upsert({
-        where: { id:5 },
+    const norteVeracruz = await prisma.region1.upsert({
+        where: { id:14 },
         update: {},
         create: {
-          name:"Tabasco y Chiapas"
-      },
-      });
-    const yucatan = await prisma.region1.upsert({
-        where: { id:6 },
-        update: {},
-        create: {
-          name:"Penisula de Yucatán"
-      },
-      });
-    const costaCentralGolfo = await prisma.region1.upsert({
-        where: { id:7 },
-        update: {},
-        create: {
-          name:"Costa central del Golfo"
-      },
-      });
-    
-    const noreste = await prisma.region1.upsert({
-        where: { id:8 },
-        update: {},
-        create: {
-          name:"Noreste"
+          name:"Norte de Veracruz"
       },
       });
     const extinct = await prisma.region1.upsert({
-        where: { id:9 },
+        where: { id:15},
         update: {},
         create: {
           name:"Extinto"
       },
       });
+    
     console.log('Create regions');
   } catch(e) {
     console.error(e);
