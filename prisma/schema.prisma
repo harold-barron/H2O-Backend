@@ -14,6 +14,7 @@ model Region1{
   name String     @db.VarChar(255)
   relation Users[] @relation("id")
   animals Animals[] @relation("Animals")
+  animalRegion region_animal[]
 }
 
 model Users {
@@ -40,4 +41,14 @@ model Animals{
   link_image String
   id_reg  Region1 @relation("Animals",fields: [id_region_animal], references: [id])
   id_region_animal Int
+  animalRegion region_animal[] @relation("RA")
+}
+
+
+model region_animal{
+  id_level_count Int @id @default(autoincrement())
+  id_region_1  Region1 @relation(fields: [id_region_animals], references: [id])
+  id_region_animals Int
+  animal_name Animals @relation("RA",fields: [animal_name_relation], references: [name])
+  animal_name_relation String 
 }
