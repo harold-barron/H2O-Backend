@@ -88,7 +88,7 @@ app.post('/Animal', async (req, res) => {
   }); 
 
 app.put('/Animal/:name', async (req, res) => {
-	const nameToUpdate = req.params.user;
+	const nameToUpdate = req.params.name;
 
 	await prisma.animals.update({
 		where: {
@@ -100,3 +100,9 @@ app.put('/Animal/:name', async (req, res) => {
 	})
 	return res.json({message: "Especie actualizado correctamente"});
 });
+app.delete('/Animal/:name', async (req, res) => {
+	const animalToDelete = req.params.name;
+	await prisma.animals.delete({where: {name: animalToDelete}});
+	return res.json({message: "Especie eliminada correctamente"});
+});
+
