@@ -27,3 +27,16 @@ app.get('/Users/:user', async (req, res) => {
   const oneUser = await prisma.users.findUnique({where: {user: user}});
   res.json(oneUser);
 });
+
+app.post('/Users', async (req, res) => {
+  const newUser = {
+    user: req.body.user,
+    name: req.body.name,
+    regid:req.body.regid,
+    zoneLeader:false,
+    email: req.body.email,
+   };
+  const message = 'Usuario creado.';
+  await prisma.users.create({data: newUser});
+  return res.json({message});
+});
