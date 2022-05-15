@@ -74,3 +74,15 @@ app.get('/Animal',async(req,res) =>
     res.json(getAnimalByName);
   });
   
+app.post('/Animal', async (req, res) => {
+    const newSepecie = {
+        name: req.body.name,
+        id_animal_dangerlevel:req.body.id_animal_dangerlevel,
+        description:req.body.description,
+        link_image:req.body.link_image,
+        id_region_animal:req.body.id_region_animal,
+     };
+    const message = 'Nueva especie agregada.';
+    await prisma.animals.create({data: newSepecie});
+    return res.json({message});
+  }); 

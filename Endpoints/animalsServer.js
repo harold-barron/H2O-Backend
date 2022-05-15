@@ -1,12 +1,22 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const app = express();
+app.use(express.json());
+const port = process.env.PORT || 3000;
 
-router.get('/',async(req,res) =>
+// Require para usar Prisma
+const { PrismaClient } = require('@prisma/client');
+const prisma = new PrismaClient();
+
+app.get('/', (req, res) => {
+    res.json({message: 'alive'});
+  });
+  
+app.listen(port, () => {
+    console.log(`Listening to requests on port ${port}`);
+  });
+
+app.get('/Animal',async(req,res) =>
   {
     const allUseres = await prisma.animals.findMany({});
     res.json(allUseres);
   })
-//export this router to use in our index.js
-module.exports = router;
-
-
