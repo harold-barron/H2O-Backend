@@ -22,12 +22,17 @@ Aqui va el texto del Tema1
 
 <div id='id2' />
 
-## Dependencias de desarrollo 🛠️
+## Dependencias de desarrollo, herramientas y  tecnologías 🛠️
 | |Dependencia|
 |------|------|
-|1|* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado|
-|2|* [Maven](https://maven.apache.org/) - Manejador de dependencias|
-|3|* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS|
+|1| [Prisma](https://www.prisma.io/)|
+|2| [Express](http://expressjs.com/)|
+|3| [Eslint](https://eslint.org/)|
+
+| |Base de datos|
+|------|------|
+|1| [PostgreSQL](https://www.postgresql.org/)|
+
 
 <div id='id3' />
 
