@@ -53,6 +53,11 @@ app.put('/Users/:user', async (req, res) => {
       zoneLeader: req.body.zoneLeader
 		}
 	})
-
 	return res.json({message: "Usuario actualizado correctamente"});
+});
+
+app.delete('/Users/:user', async (req, res) => {
+	const userToDelete = req.params.user;
+	await prisma.users.delete({where: {user: userToDelete}});
+	return res.json({message: "Usuario eliminado correctamente"});
 });
