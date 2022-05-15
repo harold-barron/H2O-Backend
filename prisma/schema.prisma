@@ -9,12 +9,6 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-
-model region {
-  id_region Int @id @default(autoincrement())
-  name String @db.VarChar(255)
-}
-
 model Region1{
   id   Int    @id @default(autoincrement())
   name String     @db.VarChar(255)
@@ -28,4 +22,11 @@ model Users {
   reg   Region1? @relation("id",fields:[regid], references:[id])
   zoneLeader Boolean
   email String @unique
+}
+
+
+model dangerlevel{
+  id_level Int @id @default(autoincrement())
+  name String @db.VarChar(255)
+  level_description String
 }
