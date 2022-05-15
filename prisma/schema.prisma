@@ -13,6 +13,7 @@ model Region1{
   id   Int    @id @default(autoincrement())
   name String     @db.VarChar(255)
   relation Users[] @relation("id")
+  animals Animals[] @relation("Animals")
 }
 
 model Users {
@@ -24,9 +25,19 @@ model Users {
   email String @unique
 }
 
-
 model dangerlevel{
   id_level Int @id @default(autoincrement())
   name String @db.VarChar(255)
   level_description String
+  animals Animals[]
+}
+
+model Animals{
+  name String @unique
+  id_lvl dangerlevel @relation(fields: [id_animal_dangerlevel], references: [id_level])
+  id_animal_dangerlevel Int
+  description String
+  link_image String
+  id_reg  Region1 @relation("Animals",fields: [id_region_animal], references: [id])
+  id_region_animal Int
 }
