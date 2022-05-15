@@ -21,3 +21,9 @@ app.get('/Users',async(req,res) =>
   res.json(allUseres);
 })
 
+app.get('/Users/:user', async (req, res) => {
+  const user = req.params.user; 
+  console.log(user)
+  const oneUser = await prisma.users.findUnique({where: {user: user}});
+  res.json(oneUser);
+});
