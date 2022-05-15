@@ -60,6 +60,13 @@ const prisma = new PrismaClient();
           name:"Noreste"
       },
       });
+    const extinct = await prisma.region1.upsert({
+        where: { id:9 },
+        update: {},
+        create: {
+          name:"Extinto"
+      },
+      });
     console.log('Create regions');
   } catch(e) {
     console.error(e);
