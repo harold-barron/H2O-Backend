@@ -11,30 +11,52 @@ Elaborar un proyecto web (fullstack) que de solución escalable y ágil a una pr
 
 ## Tabla de contenidos: 📋
 ---
-- [Tema1](#id1)
-- [Dependencias de desarrollo](#id2)
+- [Dependencias de desarrollo](#id1)
+- [Solución](#id2)
 - [Autores](#id3)
 
 <div id='id1' />
 
-## Tema1
-Aqui va el texto del Tema1
-
-<div id='id2' />
-
 ## Dependencias de desarrollo, herramientas y  tecnologías 🛠️
+| |Tecnologías|
+|------|------|
+|1| [Node js](https://nodejs.org/en/)|
+
 | |Dependencia|
 |------|------|
 |1| [Prisma](https://www.prisma.io/)|
 |2| [Express](http://expressjs.com/)|
 |3| [Eslint](https://eslint.org/)|
+|4| [Cosr](https://www.npmjs.com/package/cors)|
 
 | |Base de datos|
 |------|------|
 |1| [PostgreSQL](https://www.postgresql.org/)|
 
 
+<div id='id2' />
+
+## Propuesta
+
 <div id='id3' />
+
+## Solución Frontend
+
+<div id='id4' />
+
+## Solución Backend
+
+### 1. Creación de una base de datos en PostgreSQL:
+
+### 2. Creación del API:
+
+### 3. CRUD:
+
+### 4. API CRUD:
+
+### 5. Automatización de pruebas con Postman:
+
+<div id='id5' />
 
 ## Autores ✒️
 
