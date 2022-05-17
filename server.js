@@ -8,6 +8,12 @@ require('dotenv').config()
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
+const cors = require("cors");
+const cosrOptions = {
+  origin:"http://localhost:8081"
+}
+app.use(cors(cosrOptions));
+
 app.get("/", (req, res) => {
     res.json({message: "Conectado en adaptable"});
 });
